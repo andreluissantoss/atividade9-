@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://www.enfoquems.com.br/wp-content/uploads/2020/09/corinthians_p000Pmj_widexl.jpeg') no-repeat center center fixed; /* Substitua pelo seu URL de imagem */
+    background-size: cover; /* Ajusta a imagem ao tamanho da tela */
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: rgb(253, 252, 252); /* Cor do título em vermelho */
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px; /* Espaço entre os itens */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com opacidade */
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr); /* Define 3 colunas */
+    border: 2px solid rgb(87, 3, 3); /* Borda preta ao redor da grid */
+}
+
+.grid-item {
+    background-color: rgba(20, 18, 18, 0.8); /* Vermelho com opacidade */
+    text-align: center;
+    padding: 40px; /* Aumenta o espaço interno */
+    font-size: 30px; /* Tamanho da fonte */
+    color: black; /* Cor do texto em preto */
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: transform 0.3s, background-color 0.3s; /* Transição suave */
+}
+
+.grid-item:hover {
+    transform: scale(1.05); /* Aumenta o item ao passar o mouse */
+    background-color: rgba(2, 1, 0, 0.9); /* Mudança de cor ao passar o mouse */
+}
+
+.item1 {
+    grid-column: 1 / span 2; /* Ocupa as duas primeiras colunas */
+    grid-row: 1; /* Primeira linha */
+}
+
+.item2 {
+    grid-column: 3; /* Terceira coluna */
+    grid-row: 1 / span 2; /* Ocupa as duas primeiras linhas */
+}
+
+.item3 {
+    grid-column: 1; /* Primeira coluna */
+    grid-row: 2; /* Segunda linha */
+}
+
+.item4 {
+    grid-column: 2; /* Segunda coluna */
+    grid-row: 2; /* Segunda linha */
+}
+
+.item5 {
+    grid-column: 1 / span 3; /* Ocupa as três colunas */
+    grid-row: 3; /* Terceira linha */
+}
